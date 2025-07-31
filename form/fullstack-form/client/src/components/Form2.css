@@ -1,0 +1,272 @@
+/* General Page Styling */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #141e30, #243b55);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* Header Section */
+.form-header {
+  background-color: #ffffff12;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  border-left: 5px solid #a97f44;
+  border-radius: 15px;
+}
+
+.form-header h1 {
+  font-size: 28px;
+  color: #f7d8a7;
+  margin-bottom: 10px;
+}
+
+.form-header p {
+  font-size: 15px;
+  color: #eee;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Header Section */
+.form-header {
+  background-color: #ffffff12;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  border-left: 5px solid #a97f44;
+  border-radius: 15px;
+}
+
+.form-header h1 {
+  font-size: 28px;
+  color: #f7d8a7;
+  margin-bottom: 10px;
+}
+
+.form-header p {
+  font-size: 15px;
+  color: #eee;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Form Container */
+.form2-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 35px;
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+@media (max-width: 500px) {
+  .form2-container {
+    padding: 20px;
+    border-radius: 12px;
+  }
+}
+
+/* Input box fix */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%; /* Ensures input fields do not overflow */
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  background-color: #ffffff25;
+}
+
+/* Question Block */
+.question-block {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff05;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.question-block:hover {
+  border-color: #a97f44;
+  background-color: #ffffff0a;
+}
+
+.question-block p {
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #f5f5f5;
+}
+
+.question-block label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 25px;
+  font-size: 16px;
+  color: #f5f5f5;
+  cursor: pointer;
+}
+
+.question-block:hover label {
+  color: #f7d8a7;
+}
+
+input[type="radio"] {
+  accent-color: #a97f44;
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+}
+
+/* Buttons */
+button {
+  background-color: #a97f44;
+  color: white;
+  padding: 12px 20px;
+  margin: 10px 5px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #8c6c34;
+  transform: translateY(-1px);
+}
+
+/* Form Title on Step 2 */
+h3 {
+  font-size: 22px;
+  text-align: center;
+  color: #f7d8a7;
+  margin-bottom: 30px;
+}
+
+/* Navigation Buttons */
+
+/* Button Alignment */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+/* For single button like Step 1 */
+.form-buttons.single-button {
+  justify-content: flex-end;
+}
+
+/* Email Input */
+.email-input {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  color: #222;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 14px 16px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.email-input::placeholder {
+  color: #999;
+  font-weight: 400;
+}
+
+.email-input:focus {
+  background-color: #f9f4ed;
+  border-color: #a97f44;
+  box-shadow: 1px #a97f44, 0 6px 20px rgba(169, 127, 68, 0.2);
+  outline: none;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #f0f0f0;
+}
+
+form input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Input styled as a single underline */
+.underline-input {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  padding: 8px 4px;
+  color: #fff;
+  margin-top: 6px;
+  transition: border-color 0.3s;
+}
+
+.underline-input::placeholder {
+  color: #aaa;
+}
+
+.underline-input:focus {
+  outline: none;
+  border-bottom: 2px solid #a97f44;
+}
+
+.next-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.success {
+  background-color: #4caf50;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  animation: fadeOut 3s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
