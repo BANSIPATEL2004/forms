@@ -155,7 +155,7 @@ const Form2 = ({ onNext }) => {
     };
 
     try {
-      await axios.post("http://localhost:5000/api/form2", finalPayload);
+      await axios.post("https://backend-forms-g8v3.onrender.com/api/form2", finalPayload);
       setSubmitted(true);
       setStep(1);
 
