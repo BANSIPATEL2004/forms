@@ -283,6 +283,13 @@ input[name="communicationComments"] {
   .button-primary {
     width: 100%;
   }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    word-wrap: break-word;
+    line-height: 1.4;
+  }
 }
 
 .progress-indicator {
